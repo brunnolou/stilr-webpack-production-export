@@ -1,4 +1,4 @@
-# Stilr example 
+# Stilr example
 ### With webpack production export
 
 This is a example implementation of [Stilr](https://github.com/kodyl/stilr) for *styling with all the power of javascript and CSS combined.*
@@ -12,5 +12,5 @@ npm install
 
 ## Running the application
 ```sh
-npm start
+npm run build && open index.html
 ```
