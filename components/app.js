@@ -5,26 +5,28 @@
 
 import React, { Component } from 'react';
 import StyleSheet from 'stilr';
+import Color from 'color';
+import { colors } from '../constants';
 
 // Create styles.
 const styles = StyleSheet.create({
   block: {
     ':hover': {
-      backgroundColor: '#aaa'
+      backgroundColor: Color(colors.gray).darken(0.2).rgbString()
     },
     '@media (max-width: 768px)': {
       width: '100%'
     },
-    backgroundColor: '#ddd',
+    backgroundColor: colors.gray,
     display: 'flex',
     justifyContent: 'center',
     width: 100
   },
   blue: {
-    color: 'blue'
+    color: Color(colors.blue).lighten(0.5).rgbString()
   },
   red: {
-    color: 'red'
+    color: Color(colors.red).lighten(0.5).rgbString()
   }
 });
 
